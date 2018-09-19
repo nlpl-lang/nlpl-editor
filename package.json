@@ -1,0 +1,8 @@
+{
+  "name": "nlpl-editor",
+  "version": "0.1.0",
+  "description": "Nlpl editor",
+  "main": "index.js",
+  "author": "Daniel Garcia",
+  "license": "MIT"
+}
