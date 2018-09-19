@@ -4,5 +4,8 @@
   "description": "Nlpl editor",
   "main": "index.js",
   "author": "Daniel Garcia",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "nlpl-core": "file:../core"
+  }
 }
