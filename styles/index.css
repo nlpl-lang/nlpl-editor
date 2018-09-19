@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: rgb(80, 80, 80);
+  font-family: 'Yantramanav', sans-serif;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+}
+
+p {
+  background-color: rgb(235, 235, 235);
+  border: none;
+  color: rgb(60, 60, 60);
+  font-size: 1.2em;
+  letter-spacing: 0.5;
+  padding: 0.5em;
+  width: 100%;
+}
+
+p:focus {
+  box-shadow: rgb(59, 153, 252) 0 0 2px;
+  outline: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.container {
+  margin: 0.5em 1em;
+}
+
+.nlpl-editor {
+  width: 40em;
+}
+
+.nlpl-editor-block {
+  position: relative;
+}
+
+.nlpl-editor-textarea {
+  transition: all 0.5s;
+}
+
+.nlpl-editor-p {
+  height: 6em;
+}
+
+.nlpl-editor-controls {
+  background-color: rgb(200, 200, 200);
+  display: none;
+  left: 0.5em;
+  list-style: none;
+  position: absolute;
+  top: -1.4em;
+}
+
+.nlpl-editor-controls li {
+  border: 1px solid gray;
+  border-right: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.2em 0.4em;
+}
+
+.nlpl-editor-controls li:last-of-type {
+  border-right: 1px solid gray;
+}
+
+.nlpl-editor-controls li:hover, .nlpl-editor-controls li.active {
+  background-color: rgb(180, 180, 180);
+  color: rgb(24, 24, 24);
+}
+
+.nlpl-editor-block > p:focus + .nlpl-editor-controls {
+  animation: fadeIn 0.5s;
+  display: flex;
+}
