@@ -7,5 +7,9 @@
   "license": "MIT",
   "dependencies": {
     "nlpl-core": "file:../core"
+  },
+  "devDependencies": {
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
   }
 }
