@@ -14,7 +14,7 @@ h1 {
 }
 
 p {
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(245, 245, 245);
   border: none;
   color: rgb(60, 60, 60);
   font-size: 1.2em;
@@ -26,6 +26,10 @@ p {
 p:focus {
   box-shadow: rgb(59, 153, 252) 0 0 2px;
   outline: none;
+}
+
+p:hover {
+  background-color: rgb(235, 235, 235);
 }
 
 @keyframes fadeIn {
@@ -55,6 +59,7 @@ p:focus {
 
 .nlpl-editor-controls {
   background-color: rgb(200, 200, 200);
+  box-shadow: rgba(60, 60, 60, 0.55) 5px 5px 10px;
   display: none;
   left: 0.5em;
   list-style: none;
@@ -63,15 +68,14 @@ p:focus {
 }
 
 .nlpl-editor-controls li {
-  border: 1px solid gray;
-  border-right: none;
+  border-right: 1px solid gray;
   cursor: pointer;
   display: inline-block;
   padding: 0.2em 0.4em;
 }
 
 .nlpl-editor-controls li:last-of-type {
-  border-right: 1px solid gray;
+  border-right: none;
 }
 
 .nlpl-editor-controls li:hover, .nlpl-editor-controls li.active {
