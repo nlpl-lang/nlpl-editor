@@ -32,6 +32,10 @@ p:hover {
   background-color: rgb(235, 235, 235);
 }
 
+[data-js-template] {
+  display: none;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -41,23 +45,23 @@ p:hover {
   margin: 0.5em 1em;
 }
 
-.nlpl-editor {
+.nlpl-editor-wrapper {
   width: 40em;
 }
 
-.nlpl-editor-block {
+.snippet-block {
   position: relative;
 }
 
-.nlpl-editor-textarea {
+.snippet-textarea {
   transition: all 0.5s;
 }
 
-.nlpl-editor-p {
+.snippet-p {
   height: 6em;
 }
 
-.nlpl-editor-controls {
+.snippet-controls {
   background-color: rgb(200, 200, 200);
   box-shadow: rgba(60, 60, 60, 0.55) 5px 5px 10px;
   display: none;
@@ -67,23 +71,28 @@ p:hover {
   top: -1.4em;
 }
 
-.nlpl-editor-controls li {
+.snippet-controls li {
   border-right: 1px solid gray;
   cursor: pointer;
   display: inline-block;
   padding: 0.2em 0.4em;
 }
 
-.nlpl-editor-controls li:last-of-type {
+.snippet-controls li:last-of-type {
   border-right: none;
 }
 
-.nlpl-editor-controls li:hover, .nlpl-editor-controls li.active {
+.snippet-controls li:hover, .snippet-controls li.active {
   background-color: rgb(180, 180, 180);
   color: rgb(24, 24, 24);
 }
 
-.nlpl-editor-block > p:focus + .nlpl-editor-controls {
+.snippet-block > p:focus + .snippet-controls {
   animation: fadeIn 0.5s;
   display: flex;
+}
+
+.token {
+  display: inline-block;
+  margin: 0 0.1em;
 }

@@ -10,19 +10,22 @@
   <body>
     <div class="container">
 
-      <div class="nlpl-editor">
+      <div class="nlpl-editor-wrapper">
         <h1>Nlpl editor</h1>
 
-        <div class="nlpl-editor-block">
-          <p class="nlpl-editor-textarea nlpl-editor-p" contenteditable="true"></p>
+        <div data-js-nlpl-editor></div>
+      </div>
+    </div>
 
-          <ul class="nlpl-editor-controls">
-            <li>Title</li>
-            <li>Heading</li>
-            <li class="active">Paragraph</li>
-          </ul>
-        </div>
+    <div id="snippet-template" data-js-template>
+      <div class="snippet-block">
+        <p class="snippet-textarea snippet-p" data-js-snippet-content contenteditable="true"></p>
 
+        <ul class="snippet-controls">
+          <li>Title</li>
+          <li>Heading</li>
+          <li class="active">Paragraph</li>
+        </ul>
       </div>
     </div>
 

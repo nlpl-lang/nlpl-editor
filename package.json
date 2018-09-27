@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "Daniel Garcia",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  },
   "dependencies": {
     "nlpl-core": "file:../core"
   },
