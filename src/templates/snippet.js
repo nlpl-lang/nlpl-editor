@@ -6,9 +6,9 @@ const Snippet = {
 
     const tokensFragment = document.createDocumentFragment();
 
-    for(var i = 0; i < tokens.length; i++) {
-      tokensFragment.appendChild(Token.template(tokens[i]));
-    }
+    tokens.forEach(function(token) {
+      tokensFragment.appendChild(Token.template(token));
+    });
 
     const snippetContent = template.querySelector('[data-js-snippet-content]');
     snippetContent.appendChild(tokensFragment);
