@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 body {
@@ -95,4 +96,26 @@ p:hover {
 .token {
   display: inline-block;
   margin: 0 0.1em;
+}
+
+.token-pos {
+  bottom: -1px;
+  cursor: pointer;
+  height: 3px;
+  opacity: 0.7;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+.token-adjective, .token-comparable {
+  border-bottom: 3px solid rgb(255, 152, 0);
+}
+
+.token-noun, .token-singular {
+  border-bottom: 3px solid rgb(59, 153, 252);
+}
+
+.token-verb {
+  border-bottom: 3px solid rgb(76, 175, 80);
 }

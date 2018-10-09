@@ -1,10 +1,11 @@
 const Token = {
   template: function(token) {
-    const tokenHtml = document.createElement('div');
-    tokenHtml.innerText = token.original;
-    tokenHtml.className += 'token ' + token.partOfSpeech;
+    const template = document.getElementById('token-template').firstElementChild.cloneNode(true);
 
-    return tokenHtml;
+    template.innerText = token.original;
+    template.className += ' token-' + token.partOfSpeech;
+
+    return template;
   }
 };
 
