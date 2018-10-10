@@ -84,10 +84,10 @@ p:hover {
   color: rgb(24, 24, 24);
 }
 
-.snippet-block > p:focus + .snippet-controls {
+/*.snippet-block > p:focus + .snippet-controls {
   animation: fadeIn 0.5s;
   display: flex;
-}
+} */
 
 .token {
   display: inline-block;
