@@ -1,5 +1,7 @@
 node_modules
 
+erl_crash.dump
+npm-debug.log
 yarn-error.log
 
 dist/main.js
