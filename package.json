@@ -6,13 +6,15 @@
   "author": "Daniel Garcia",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack-dev-server"
   },
   "dependencies": {
     "nlpl-core": "file:../core"
   },
   "devDependencies": {
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.1"
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.9"
   }
 }
