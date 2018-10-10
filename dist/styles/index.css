@@ -6,7 +6,8 @@
 }
 
 body {
-  color: rgb(80, 80, 80);
+  background-color: rgba(128, 128, 128, 0.05);
+  color: #8e8e8e;
   font-family: 'Yantramanav', sans-serif;
 }
 
@@ -15,9 +16,8 @@ h1 {
 }
 
 p {
-  background-color: rgb(245, 245, 245);
+  background-color: white;
   border: none;
-  color: rgb(60, 60, 60);
   font-size: 1.2em;
   letter-spacing: 0.5;
   padding: 0.5em 0.5em 0.6em;
@@ -29,9 +29,9 @@ p:focus {
   outline: none;
 }
 
-p:hover {
+/*p:hover {
   background-color: rgb(235, 235, 235);
-}
+} */
 
 [data-js-template] {
   display: none;
@@ -43,15 +43,27 @@ p:hover {
 }
 
 .container {
-  margin: 0.5em 1em;
+  height: 100%;
+  margin: 0 1em;
+}
+
+.nlpl-output-wrapper {
+  height: 100%;
+  padding: 0.5em 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 600px;
+}
+
+.nlpl-output {
+  background-color: white;
+  height: 100%;
 }
 
 .nlpl-editor-wrapper {
-  width: 40em;
-}
-
-.snippet-block {
-  position: relative;
+  margin-right: 608px;
+  padding-top: 0.5em;
 }
 
 .snippet-textarea {
