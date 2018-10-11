@@ -1,6 +1,7 @@
-var Nlpl = require('nlpl-core');
+const Nlpl = require('nlpl-core');
+const OutputWindow = require('./outputWindow');
 
-var Snippet = require('./templates/snippet');
+const Snippet = require('./templates/snippet');
 
 var snippets = {
   0: {
@@ -13,6 +14,18 @@ document.querySelector('[data-js-nlpl-editor]').append(
   Snippet.template(snippets[0])
 );
 
+const updateSnippet = function(eventTarget, snippets) {
+  const $element = eventTarget.parentElement;
+  const id = +$element.dataset.id;
+
+  const snippet = snippets[id];
+  snippet.tokens = Nlpl.tokenize(eventTarget.textContent);
+  snippet.ast = Nlpl.parse(snippet.tokens);
+
+  Snippet.update(snippet, $element);
+  OutputWindow.update(snippets);
+};
+
 document.addEventListener('keypress', function(event) {
   if(
     event.key === 'Enter' &&
@@ -21,12 +34,6 @@ document.addEventListener('keypress', function(event) {
   ) {
     event.preventDefault();
 
-    const $element = event.target.parentElement;
-    const id = +$element.dataset.id;
-
-    const snippet = snippets[id];
-    snippet.tokens = Nlpl.tokenize(event.target.textContent);
-
-    Snippet.update(snippet, $element);
+    updateSnippet(event.target, snippets);
   }
 });
