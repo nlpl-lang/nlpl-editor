@@ -6,6 +6,7 @@ The goal is to try to make programming like writing a book.
 At the beginning the development is focused on programs that can:
 - Draw shapes and be animated
 - Create graphs
+
 **Not aimed as a General Purpose Language for now**.
 
 
@@ -44,7 +45,7 @@ This is the only abstract concept, the characters are like variables. When a cha
 Like a book you can have **Chapters**, **Titles**, **Headings** and **Paragraphs**. Only the Paragraphs are evaluated as code. The Chapters, Titles and Headings are meant for organization purposes.
 
 
-## Future possibilities
+## Future enhancements
 
 - **Function names** might have a list of synonyms to call the function. It will have a _canonical name_ shown to the user.
 - Nice error messages.
