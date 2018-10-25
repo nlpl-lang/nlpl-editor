@@ -14,12 +14,11 @@ document.querySelector('[data-js-nlpl-editor]').append(
   Snippet.template(snippets[0])
 );
 
-const updateSnippet = function(eventTarget, snippets) {
-  const $element = eventTarget.parentElement;
+const updateSnippet = function($element, snippets) {
   const id = +$element.dataset.id;
 
   const snippet = snippets[id];
-  snippet.tokens = Nlpl.tokenize(eventTarget.textContent);
+  snippet.tokens = Nlpl.tokenize($element.textContent);
   snippet.ast = Nlpl.parse(snippet.tokens);
 
   Snippet.update(snippet, $element);

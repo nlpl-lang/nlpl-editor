@@ -8,7 +8,8 @@ const Snippet = {
     return template;
   },
   update: function(snippet, $element) {
-    const snippetContent = $element.querySelector('[data-js-snippet-content]');
+    const snippetContent = $element.querySelector('[data-js-snippet-p]');
+    $element.childNodes[0].nodeValue = '';
     snippetContent.innerHTML = '';
 
     snippet.tokens.forEach(function(token) {

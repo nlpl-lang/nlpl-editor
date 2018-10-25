@@ -15,24 +15,6 @@ h1 {
   margin-bottom: 0.5em;
 }
 
-p {
-  background-color: white;
-  border: none;
-  font-size: 1.2em;
-  letter-spacing: 0.5;
-  padding: 0.5em 0.5em 0.6em;
-  width: 100%;
-}
-
-p:focus {
-  box-shadow: rgb(59, 153, 252) 0 0 2px;
-  outline: none;
-}
-
-/*p:hover {
-  background-color: rgb(235, 235, 235);
-} */
-
 [data-js-template] {
   display: none;
 }
@@ -62,12 +44,27 @@ p:focus {
 }
 
 .nlpl-editor-wrapper {
-  margin-right: 608px;
+  margin-right: 38.5em;
   padding-top: 0.5em;
 }
 
 .snippet-textarea {
   transition: all 0.5s;
+}
+
+.snippet-block {
+  background-color: white;
+  border: none;
+  box-sizing: content-box;
+  font-size: 1.2em;
+  letter-spacing: 0.5;
+  min-height: 1.2em;
+  padding: 0.5em 0.25em 0.6em;
+}
+
+.snippet-block:focus {
+  box-shadow: rgb(59, 153, 252) 0 0 2px;
+  outline: none;
 }
 
 .snippet-controls {
@@ -96,6 +93,16 @@ p:focus {
   color: rgb(24, 24, 24);
 }
 
+.snippet-p {
+  display: inline-block;
+  padding: 0 0.25em;
+}
+
+/*.snippet-p:hover {
+  background-color: rgb(235, 235, 235);
+} */
+
+
 /*.snippet-block > p:focus + .snippet-controls {
   animation: fadeIn 0.5s;
   display: flex;
@@ -116,11 +123,11 @@ p:focus {
 }
 
 .token-adjective, .token-comparable {
-  border-bottom: 3px solid rgb(255, 152, 0);
+  /*border-bottom: 3px solid rgb(255, 152, 0);*/
 }
 
 .token-noun, .token-singular {
-  border-bottom: 3px solid rgb(59, 153, 252);
+  /*border-bottom: 3px solid rgb(59, 153, 252);*/
 }
 
 .token-verb {
