@@ -3,7 +3,8 @@ const Token = require('./token');
 const Snippet = {
   template: function(snippet) {
     const template = document.getElementById('snippet-template').firstElementChild.cloneNode(true);
-    template.dataset.id = snippet.id;
+    const snippetContent = template.querySelector('[data-js-snippet-p]');
+    snippetContent.dataset.id = snippet.id;
 
     return template;
   },

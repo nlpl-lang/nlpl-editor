@@ -15,7 +15,7 @@ document.querySelector('[data-js-nlpl-editor]').append(
 );
 
 const updateSnippet = function($element, snippets) {
-  const id = +$element.dataset.id;
+  const id = +$element.querySelector('[data-js-snippet-p]').dataset.id;
 
   const snippet = snippets[id];
   snippet.tokens = Nlpl.tokenize($element.textContent);
