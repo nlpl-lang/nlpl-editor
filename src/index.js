@@ -1,5 +1,5 @@
 const Nlpl = require('nlpl-core');
-const OutputWindow = require('./outputWindow');
+const OutputWindow = require('./OutputWindow');
 
 const Snippet = require('./templates/snippet');
 

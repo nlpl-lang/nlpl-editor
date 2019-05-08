@@ -10,7 +10,7 @@
     "start": "webpack-dev-server"
   },
   "dependencies": {
-    "nlpl-core": "file:../core"
+    "nlpl-core": "file:../nlpl-core"
   },
   "devDependencies": {
     "webpack": "^4.20.2",
