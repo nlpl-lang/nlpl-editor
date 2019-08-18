@@ -4,7 +4,7 @@ A research programming language aimed at using plain English as a programming la
 The goal is to try to make programming like writing a book.
 
 At the beginning the development is focused on programs that can:
-- Draw shapes and be animated
+- Draw and animate shapes
 - Create graphs
 
 **Not aimed as a General Purpose Language for now**.
